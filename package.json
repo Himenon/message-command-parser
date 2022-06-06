@@ -7,13 +7,13 @@
     "command parser",
     "string parser"
   ],
-  "homepage": "https://github.com/Himenon/message-command-parser #readme",
+  "homepage": "https://github.com/Himenon/message-command-parser#readme",
   "bugs": {
-    "url": "https://github.com/Himenon/message-command-parser /issues"
+    "url": "https://github.com/Himenon/message-command-parser/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Himenon/message-command-parser .git"
+    "url": "git@github.com:Himenon/message-command-parser.git"
   },
   "license": "MIT",
   "author": {
