@@ -1,20 +1,5 @@
-# @himenon/message-command-parser
-
-## Install
-
-```bash
-# One of:
-npm  i   @himenon/message-command-parser
-yarn add @himenon/message-command-parser
-pnpm add @himenon/message-command-parser
-```
-
-## Usage
-
-[Sample Code](./example/sample.ts) (`pnpm run test:sample`)
-
-```ts
-import { Parser } from "@himenon/message-command-parser";
+// pnpm run exec:sample
+import { Parser } from "../src/index.js";
 
 const messageParser = new Parser({
   messageItems: [
@@ -57,12 +42,3 @@ showParsedValue("ping");
 
 showParsedValue("unregistered command");
 // { message: 'unregistered command' }
-```
-
-## Release
-
-- Automatic version updates are performed when merged into the `main` branch.
-
-## LICENCE
-
-[@Himenon/message-command-parser ](https://github.com/Himenon/message-command-parser)・MIT
