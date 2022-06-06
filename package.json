@@ -1,10 +1,12 @@
 {
-  "name": "@himenon/message-command-parser ",
+  "name": "@himenon/message-command-parser",
   "version": "1.0.0",
-  "description": "ESModule Library Template",
+  "description": "Parse space- and colon-separated messages into parameters",
+  "type": "module",
   "keywords": [
-    "template",
-    "typescript"
+    "message parser",
+    "command parser",
+    "string parser"
   ],
   "homepage": "https://github.com/Himenon/message-command-parser #readme",
   "bugs": {
@@ -21,7 +23,6 @@
     "url": "https://github.com/Himenon"
   },
   "sideEffects": false,
-  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -49,12 +50,13 @@
     "lerna:version:up": "lerna version --yes",
     "release:github:registry": "pnpm publish --registry https://npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}",
     "release:npm:registry": "pnpm publish",
-    "test": "run-p test:vitest eslint:validate prettier:validate",
+    "test": "run-p test:vitest test:sample eslint:validate prettier:validate",
     "prettier:format": "prettier \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\" --write ./src",
     "prettier:validate": "prettier --check \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md,html}\"",
     "eslint:format": "eslint \"**/*.{ts,tsx}\" --fix",
     "eslint:validate": "eslint \"**/*.{ts,tsx}\"",
-    "test:vitest": "vitest"
+    "test:vitest": "vitest",
+    "test:sample": "node --loader ts-node/esm ./example/sample.ts"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
@@ -88,6 +90,7 @@
     "prettier": "2.6.2",
     "simple-git-hooks": "^2.8.0",
     "sort-package-json": "1.57.0",
+    "ts-node": "^10.8.1",
     "tsup": "^6.1.0",
     "typescript": "4.7.3",
     "vitest": "^0.14.0"
