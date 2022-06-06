@@ -1,6 +1,6 @@
 {
   "name": "@himenon/message-command-parser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Parse space- and colon-separated messages into parameters",
   "keywords": [
     "message parser",
