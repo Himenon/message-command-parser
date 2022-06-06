@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.2"></a>
+## 1.1.2 (2022-06-06)
+
+
+### Bug Fixes
+
+* github action command ([#3](https://github.com/Himenon/message-command-parser /issues/3)) ([bcc1cd8](https://github.com/Himenon/message-command-parser /commit/bcc1cd8))
+
+
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2022-06-06)
 
