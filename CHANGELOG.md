@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.3"></a>
+## 1.1.3 (2022-06-06)
+
+
+### Bug Fixes
+
+* style and invalid url ([#4](https://github.com/Himenon/message-command-parser/issues/4)) ([fdbbd8f](https://github.com/Himenon/message-command-parser/commit/fdbbd8f))
+
+
+
+
+
 <a name="1.1.2"></a>
 ## 1.1.2 (2022-06-06)
 
