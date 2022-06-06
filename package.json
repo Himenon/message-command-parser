@@ -1,8 +1,7 @@
 {
   "name": "@himenon/message-command-parser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Parse space- and colon-separated messages into parameters",
-  "type": "module",
   "keywords": [
     "message parser",
     "command parser",
@@ -23,6 +22,7 @@
     "url": "https://github.com/Himenon"
   },
   "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
