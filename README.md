@@ -1,4 +1,4 @@
-# @himenon/template-esm-js
+# @himenon/message-command-parser
 
 ## Release
 
@@ -6,4 +6,4 @@
 
 ## LICENCE
 
-[@Himenon/template-esm-js](https://github.com/Himenon/template-esm-js)・MIT
+[@Himenon/message-command-parser ](https://github.com/Himenon/message-command-parser)・MIT
