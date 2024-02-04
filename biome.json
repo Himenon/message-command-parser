@@ -17,5 +17,10 @@
   "files": {
     "ignoreUnknown": true,
     "ignore": ["dist"]
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded"
+    }
   }
 }
