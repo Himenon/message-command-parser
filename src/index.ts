@@ -109,7 +109,7 @@ export class Parser {
     this.params.messageItems.forEach(({ command }) => {
       const matched = command.match(/^(?<action>\w+)/);
       if (matched) {
-        const action = (matched.groups || {}).action;
+        const action = matched.groups?.action;
         action && actions.push(action);
       }
     });
