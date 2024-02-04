@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.1.4"></a>
+## 1.1.4 (2024-02-04)
+
+
+### Bug Fixes
+
+* formatter ([#6](https://github.com/Himenon/message-command-parser/issues/6)) ([1ee1189](https://github.com/Himenon/message-command-parser/commit/1ee1189))
+
+
+
+
+
 <a name="1.1.3"></a>
 ## 1.1.3 (2022-06-06)
 
