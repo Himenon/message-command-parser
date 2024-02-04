@@ -18,7 +18,6 @@ describe("Parseのテスト", () => {
     const parser = new Module.Parser({
       messageItems: messageItems,
     });
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect((parser as any).validActions).toStrictEqual(["get", "create"]);
   });
 
@@ -26,7 +25,6 @@ describe("Parseのテスト", () => {
     const parser = new Module.Parser({
       messageItems: messageItems,
     });
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     expect((parser as any).parsedInputCommands).toStrictEqual([
       {
         command: "get release tags:string[]",
