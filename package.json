@@ -60,15 +60,8 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,json,yml,yaml,html,md}": [
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "package.json": [
-      "sort-package-json"
+    "*.{js,jsx,json,yml,yaml,html,md,ts,tsx}": [
+      "biome format --no-errors-on-unmatched --write"
     ]
   },
   "devDependencies": {
