@@ -11,12 +11,15 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off"
+      }
     }
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["dist"]
+    "ignore": ["dist", "src/__tests__"]
   },
   "javascript": {
     "formatter": {
