@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# 2.0.0 (2024-02-04)
+
+
+### Chores
+
+* bump ([#7](https://github.com/Himenon/message-command-parser/issues/7)) ([815941f](https://github.com/Himenon/message-command-parser/commit/815941f))
+
+
+### BREAKING CHANGES
+
+* use esmodule
+
+
+
+
+
 <a name="1.1.4"></a>
 ## 1.1.4 (2024-02-04)
 
