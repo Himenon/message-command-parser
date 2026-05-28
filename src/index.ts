@@ -76,7 +76,7 @@ export class Parser {
    */
   private validateDuplicateCommandExists(): void {
     const duplicateCommands: { command: string; another: string[] }[] = [];
-    this.params.messageItems.forEach(messageItem => {
+    this.params.messageItems.forEach((messageItem) => {
       const messageCommand = this.parseMessage(messageItem.command, "system");
       if (messageCommand.kind === "plain") {
         return;
@@ -85,12 +85,12 @@ export class Parser {
       if (matchedParsedInputCommands.length > 1) {
         duplicateCommands.push({
           command: messageItem.command,
-          another: matchedParsedInputCommands.filter(item => item.command !== messageItem.command).map(item => item.command),
+          another: matchedParsedInputCommands.filter((item) => item.command !== messageItem.command).map((item) => item.command),
         });
       }
       if (duplicateCommands.length > 0) {
-        const errorMessageBodies = duplicateCommands.map(duplicateCommand => {
-          const texts: string[] = [`Command: "${duplicateCommand.command}"`, ...duplicateCommand.another.map(command => `- "${command}"`)];
+        const errorMessageBodies = duplicateCommands.map((duplicateCommand) => {
+          const texts: string[] = [`Command: "${duplicateCommand.command}"`, ...duplicateCommand.another.map((command) => `- "${command}"`)];
           return texts.join("\n");
         });
         const errorMessage = ["Duplicate command definitions exist.", "", ...errorMessageBodies].join("\n");
@@ -166,7 +166,7 @@ export class Parser {
    * Returns an array matching the commands defined during Parser initialization
    */
   private getMatchedParsedInputCommands(commandMessage: CommandMessage): ParsedInputCommand[] {
-    return this.parsedInputCommands.filter(parsedInputCommand => {
+    return this.parsedInputCommands.filter((parsedInputCommand) => {
       const isActionMatch = parsedInputCommand.action === commandMessage.action;
       // Perform array comparisons. Order is also subject to check
       const isActionTargetMatch = JSON.stringify(parsedInputCommand.actionTargets) === JSON.stringify(commandMessage.actionTargets);
