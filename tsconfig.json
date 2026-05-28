@@ -6,7 +6,8 @@
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
     "noFallthroughCasesInSwitch": true,
     "noUnusedParameters": false,
     "skipLibCheck": true,
@@ -16,9 +17,5 @@
     "rootDir": ".",
     "outDir": "lib",
     "strict": true
-  },
-  "ts-node": {
-    "esm": true,
-    "swc": true,
-  },
+  }
 }
