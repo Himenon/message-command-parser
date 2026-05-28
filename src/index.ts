@@ -110,7 +110,9 @@ export class Parser {
       const matched = command.match(/^(?<action>\w+)/);
       if (matched) {
         const action = matched.groups?.action;
-        action && actions.push(action);
+        if (action) {
+          actions.push(action);
+        }
       }
     });
     return Array.from(new Set(actions));
